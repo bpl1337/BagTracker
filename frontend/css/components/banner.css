@@ -1,0 +1,48 @@
+.banner {
+  border: 1px solid var(--line);
+  background: #f7f8fa;
+  border-radius: var(--r-ctrl);
+  padding: 14px 16px;
+  font-size: 14px;
+}
+
+.banner b, .banner strong {
+  font-weight: 700;
+}
+
+.banner .title {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.banner.green {
+  background: var(--ok-bg);
+  border-color: var(--ok-line);
+  color: #15502b;
+}
+
+.banner.yellow {
+  background: var(--warn-bg);
+  border-color: var(--warn-line);
+  color: var(--warn-ink);
+}
+
+.banner.red {
+  background: var(--danger-bg);
+  border-color: #f4b4ae;
+  color: #9b1c13;
+}
+
+.banner.blue {
+  background: #eef3ff;
+  border-color: #c5d4ff;
+  color: #1f3f9a;
+}
+
+.banner.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}

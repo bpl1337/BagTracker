@@ -1,0 +1,68 @@
+.dwrap {
+  position: relative;
+}
+
+.dwrap .input {
+  padding-right: 40px;
+}
+
+.dwrap .cal {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+}
+
+.option .t {
+  flex: 1;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.option .t .sub {
+  font-weight: 400;
+}
+
+.mrrow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.mrrow .input {
+  flex: 1;
+  padding-left: 26px;
+}
+
+.mrrow .x {
+  width: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--ink-2);
+}
+
+.mrbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.mrbar a {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.mrbar .chips a {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 3px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 6px;
+}

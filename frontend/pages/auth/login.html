@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вход — БагТрек</title>
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-wordmark">Баг<br>Трек</div>
+  <div class="badge-card">
+    <div class="clip"></div>
+    <div class="bc-head"><h2>Вход</h2><span class="keybox">B</span></div>
+    <div class="bc-body">
+      <div class="field"><label>Почта</label><input class="input" type="email" id="login-email" autocomplete="username"></div>
+      <div class="field"><label>Пароль</label><div class="pass-wrap"><input class="input" type="password" id="login-pass" autocomplete="current-password"><span class="eye" id="login-eye" title="Показать пароль"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></span></div></div>
+      <div class="banner red u-mb-12 is-hidden" id="login-error">Неверная почта или пароль</div>
+      <a class="btn lg wide" id="login-btn" href="../bugs/bugs.html">Войти</a>
+      <div class="small muted u-mb-12" id="login-demo">Демо: lid@student.tsu.ru / demo</div>
+      <div class="auth-alt">Нет аккаунта? <a href="register.html">Зарегистрироваться</a></div>
+    </div>
+  </div>
+</div>
+
+  <script defer src="../../js/pages/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Новый проект — БагТрек</title>
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="no-projects.html">БагТрек</a>
+  <span class="spacer"></span>
+  <a class="user" href="../auth/login.html" title="Выйти"><span class="avatar light">L</span><span><div class="name">Lid</div></span><span class="chev">⌄</span></a>
+</header>
+<main class="page-narrow u-maxw-640">
+  <div class="crumbs"><a href="no-projects.html">Проекты</a> / Новый проект</div>
+  <h1 class="u-mb-24">Новый проект</h1>
+  <div class="card form-card">
+    <div class="form-body">
+      <div class="field"><label>Название<span class="req">*</span></label><input class="input" type="text" id="pn-name" value="Shop"></div>
+      <div class="field error u-mb-8" id="pn-key-field"><label>Ключ<span class="req">*</span></label>
+        <div class="keyrow"><input class="keyin error" id="pn-key" type="text" maxlength="4" value="B" autocomplete="off"><span class="small muted">Номера багов: <b class="u-color-ink" id="pn-hint">B1, B2, B17…</b></span></div>
+        <div class="err" id="pn-key-err">Ключ уже занят</div>
+      </div>
+      <div class="field"><label>Ссылка на репозиторий</label><input class="input u-pl-38" type="text" id="pn-repo" placeholder="https://gitlab.com/команда/shop"></div>
+      <div class="field u-mb-0"><label>Описание</label><textarea class="textarea u-minh-84" id="pn-desc">Учебный проект команды 2 курса</textarea></div>
+    </div>
+    <div class="form-foot">
+      <a class="btn secondary" href="no-projects.html">Отмена</a>
+      <a id="pn-btn" class="btn disabled" href="../releases/releases.html">Создать</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

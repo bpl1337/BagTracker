@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B9 Кнопка оплаты не активна — БагТрек</title>
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="bugs.html">БагТрек</a>
+  <span class="sep">/</span>
+  <a class="project" href="bugs.html">Shop<span class="dot">·</span><span class="k">ключ</span><span class="keybox">B</span></a>
+  <span class="spacer"></span>
+  <a class="bell" href="#" title="Уведомления"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="count">3</span></a>
+  <a class="user" href="../auth/login.html" title="Выйти"><span class="avatar light">L</span><span><div class="name">Lid</div><div class="role">Тимлид</div></span><span class="chev">⌄</span></a>
+</header>
+<nav class="tabs">
+  <a href="bugs.html" class="active">Баги<span class="n">4</span></a>
+  <a href="../releases/releases.html">Релизы<span class="n">2</span></a>
+  <a href="../members/members.html">Участники<span class="n">3</span></a>
+</nav>
+<main class="page">
+  <div class="crumbs"><a href="bugs.html">Баги</a> / B9</div>
+  <div class="bug-title">
+    <span class="bug-code">B9</span>
+    <h1>Кнопка оплаты не активна</h1>
+    <span class="badge st-closed">Закрыт</span>
+  </div>
+
+  <div class="card actions-bar">
+    <span class="lbl">Действия</span>
+    <div class="act">
+      <a class="btn secondary" href="#comments">Комментировать</a>
+      <span class="who">все</span>
+    </div>
+    <span class="note">Баг закрыт, статус больше не меняется</span>
+  </div>
+
+  <div class="banner green u-p-16">
+    <span class="title">Исправление подтверждено</span>
+    Закрыт в релизе 1.0, проверил Курбан 01.10
+  </div>
+
+  <div class="bug-grid">
+    <div>
+      <div class="card card-pad u-mb-24">
+        <div class="section">
+          <h3>Описание</h3>
+          <p>После выбора оплаты картой кнопка «Оплатить» остаётся неактивной, хотя все поля заполнены.</p>
+        </div>
+        <div class="section">
+          <h3>Шаги воспроизведения</h3>
+          <ol class="steps">
+            <li>Оформить заказ</li>
+            <li>Выбрать «Картой онлайн»</li>
+            <li>Заполнить данные карты</li>
+            <li>Попробовать нажать «Оплатить»</li>
+          </ol>
+        </div>
+        <div class="results">
+          <div class="result expected"><h4>Ожидаемый результат</h4><p>Кнопка становится активной после заполнения полей.</p></div>
+          <div class="result actual"><h4>Фактический результат</h4><p>Кнопка остаётся серой, оплатить нельзя.</p></div>
+        </div>
+        <div class="section">
+          <h3>Вложения <span class="muted u-fw-normal">(1)</span></h3>
+          <div class="files">
+            <div class="file-tile">
+              <div class="thumb"><div class="fake"><i class="u-w-60"></i><i></i><i class="u-w-40"></i><i class="btnbar"></i></div></div>
+              <div class="meta">pay-button.png<div class="sz">230 КБ</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="section u-mb-0">
+          <h3>Ссылки на коммиты / MR</h3>
+          <div class="mr">
+            <span>⑂</span><span class="id">!41</span><span class="ttl">Fix: валидация формы оплаты</span>
+            <span class="state">merged</span><span class="who">Семен</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="subtabs">
+          <a class="active" href="#comments">Комментарии<span class="n">0</span></a>
+          <a href="#history">История изменений<span class="n">4</span></a>
+        </div>
+        <div class="comments" id="comments">
+          <div class="comment-form">
+            <span class="avatar dark">L</span>
+            <div class="wrap">
+              <textarea class="textarea" placeholder="Написать комментарий…"></textarea>
+              <a class="btn disabled" href="#">Отправить</a>
+              <div class="u-clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="history" id="history">
+          <div class="h-item"><span class="when">25.09</span><span>Курбан завёл баг</span></div>
+          <div class="h-item"><span class="when">25.09</span><span>Lid запланировал исправление на релиз 1.0, дедлайн 01.10.2026, ответственный Семен</span></div>
+          <div class="h-item"><span class="when">30.09</span><span>Семен передал исправление !60 на проверку</span></div>
+          <div class="h-item"><span class="when">01.10</span><span>Курбан подтвердил исправление, статус «Закрыт»</span></div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card props">
+      <div class="prop"><span class="k">Приоритет</span><span class="v"><span class="prio p3">P3</span></span></div>
+      <div class="prop"><span class="k">Серьёзность</span><span class="v"><span class="sev sev-major">Значительная</span></span></div>
+      <div class="prop"><span class="k">Основание</span><span class="v">Ломает ключевой сценарий</span></div>
+      <div class="prop"><span class="k">Релиз (план)</span><span class="v">1.0</span></div>
+      <div class="prop"><span class="k">Дедлайн</span><span class="v">01.10.2026</span></div>
+      <div class="prop"><span class="k">Ответственный</span><span class="v"><span class="avatar sm">C</span>Семен (Разработчик)</span></div>
+      <div class="prop"><span class="k">Релиз исправления</span><span class="v">1.0</span></div>
+      <div class="prop"><span class="k">Автор</span><span class="v"><span class="avatar sm dark">K</span>Курбан (Тестировщик)</span></div>
+    </aside>
+  </div>
+</main>
+
+  <script defer src="../../js/pages/bug-card.js"></script>
+</body>
+</html>

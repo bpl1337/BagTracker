@@ -1,0 +1,108 @@
+.auth-page {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-wordmark {
+  position: absolute;
+  left: 56px;
+  bottom: 80px;
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 180px;
+  line-height: .9;
+  letter-spacing: -0.06em;
+  color: var(--ink);
+  user-select: none;
+}
+
+.badge-card {
+  position: absolute;
+  top: 120px;
+  right: 120px;
+  width: 430px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+  transform: rotate(1.5deg);
+}
+
+.badge-card::before {
+
+  content: "";
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  width: 10px;
+  height: 130px;
+  margin-left: -5px;
+  background: var(--ink);
+}
+
+.badge-card .clip {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 60px;
+  height: 22px;
+  margin-left: -30px;
+  background: #c4c8cf;
+  border-radius: 6px;
+}
+
+.badge-card .bc-head {
+  background: var(--ink);
+  color: #fff;
+  border-radius: 18px 18px 0 0;
+  padding: 34px 28px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge-card .bc-head h2 {
+  font-size: 18px;
+}
+
+.badge-card .bc-body {
+  padding: 20px 28px 26px;
+}
+
+.badge-card .bc-body .field {
+  margin-bottom: 12px;
+}
+
+.badge-card .bc-body .input {
+  height: 52px;
+}
+
+.pass-wrap {
+  position: relative;
+}
+
+.pass-wrap .eye {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ink-2);
+}
+
+.auth-alt {
+  font-size: 14px;
+  color: var(--ink-2);
+  margin-top: 12px;
+}
+
+.auth-alt a {
+  color: var(--ink);
+}
+
+.pass-wrap .eye {
+  cursor: pointer;
+  user-select: none;
+}

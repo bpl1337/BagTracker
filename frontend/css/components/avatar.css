@@ -1,0 +1,29 @@
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  background: #e6e8ec;
+  color: var(--ink);
+  flex: none;
+}
+
+.avatar.dark {
+  background: var(--ink);
+  color: #fff;
+}
+
+.avatar.light {
+  background: #fff;
+  color: var(--ink);
+}
+
+.avatar.sm {
+  width: 24px;
+  height: 24px;
+  font-size: 11px;
+}

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Результат проверки B17 — БагТрек</title><link rel="stylesheet" href="../../css/main.css"></head>
+<body class="modal-page">
+  <iframe class="modal-bg" src="../bugs/bug-b17-review.html" tabindex="-1" aria-hidden="true"></iframe>
+  <a class="overlay" href="../bugs/bug-b17-review.html" aria-label="Закрыть"></a>
+  <div class="modal">
+    <div class="modal-head"><div><h2>Результат проверки B17</h2><div class="sub">Исправление !67, автор Семен</div></div><a class="close" href="../bugs/bug-b17-review.html">×</a></div>
+    <div class="modal-body">
+      <div class="field u-mb-0"><label>Результат <span class="req">*</span></label>
+        <div class="options col"><a class="option" data-result="Fixed" href="verify-fixed.html"><span class="radio"></span><span class="t">Исправлено — закрыть баг<span class="sub">Баг перейдёт в «Закрыт», разработчик и тимлид получат уведомление</span></span><span class="badge st-closed">Закрыт</span></a><a class="option checked" data-result="NotFixed" href="#"><span class="radio"></span><span class="t">Не исправлено — вернуть на доработку<span class="sub">Баг вернётся разработчику с указанной причиной</span></span><span class="badge st-rework">На доработке</span></a></div><div class="hint" id="verify-hint">Баг вернётся разработчику.</div></div>
+      <div class="field u-mt-20-only"><label for="rel">Релиз исправления <span class="req">*</span></label><select class="select" id="rel"><option selected>1.1 (до 15.10)</option></select></div>
+      <div class="field u-mt-20-only" id="why-field"><label for="why">Причина <span class="req">*</span></label><textarea class="textarea" id="why">При пустом поле «Квартира» кнопка всё ещё не работает</textarea></div>
+    </div>
+    <div class="modal-foot"><a class="btn secondary" href="../bugs/bug-b17-review.html">Отмена</a><a class="btn " id="verify-btn" href="../bugs/bug-b17-rework.html">Подтвердить</a></div>
+  </div>
+
+</body></html>

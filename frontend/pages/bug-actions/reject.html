@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Отклонить баг — БагТрек</title><link rel="stylesheet" href="../../css/main.css"></head>
+<body class="modal-page">
+  <iframe class="modal-bg" src="../bugs/bug-b17-new.html" tabindex="-1" aria-hidden="true"></iframe>
+  <a class="overlay" href="../bugs/bug-b17-new.html" aria-label="Закрыть"></a>
+  <div class="modal">
+    <div class="modal-head"><div><h2>Отклонить баг</h2><div class="sub">B17 · Не работает кнопка «Подтвердить заказ»</div></div><a class="close" href="../bugs/bug-b17-new.html">×</a></div>
+    <div class="modal-body">
+      <div class="field"><label for="why">Причина <span class="req">*</span></label><select class="select" id="why"><option value="Duplicate" selected>Дубликат</option><option value="NotReproducible">Не воспроизводится</option><option value="Other">Не является багом</option></select></div>
+      <div class="field u-mb-12" id="dup-field"><label for="dup">Дубликат бага <span class="req">*</span></label><select class="select" id="dup"><option value="B9" selected>B9 · Кнопка оплаты не активна</option><option value="">— Выберите баг</option></select><div class="hint" id="dup-hint">Автор получит ссылку на <a href="../bugs/bug-b9.html">B9</a></div></div>
+      <div class="field"><label for="cm">Комментарий</label><textarea class="textarea" id="cm">Та же причина, что в B9: неактивная кнопка после валидации формы.</textarea></div>
+      <div class="banner u-readonly-soft">Баг перейдёт в статус «Отклонён». Курбан (автор) получит уведомление.</div>
+    </div>
+    <div class="modal-foot"><a class="btn secondary" href="../bugs/bug-b17-new.html">Отмена</a><a class="btn danger" id="reject-btn" href="../bugs/bug-b17-rejected.html">Отклонить</a></div>
+  </div>
+
+</body></html>

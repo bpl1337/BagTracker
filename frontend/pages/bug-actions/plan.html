@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Запланировать исправление — БагТрек</title><link rel="stylesheet" href="../../css/main.css"></head>
+<body class="modal-page">
+  <iframe class="modal-bg" src="../bugs/bug-b17-new.html" tabindex="-1" aria-hidden="true"></iframe>
+  <a class="overlay" href="../bugs/bug-b17-new.html" aria-label="Закрыть"></a>
+  <div class="modal">
+    <div class="modal-head"><div><h2>Запланировать исправление</h2><div class="sub">B17 · Не работает кнопка «Подтвердить заказ»</div></div><a class="close" href="../bugs/bug-b17-new.html">×</a></div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="field"><label for="prio">Приоритет <span class="req">*</span></label><select class="select" id="prio"><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option></select></div>
+        <div class="field"><label for="basis">Основание <span class="req">*</span></label><select class="select" id="basis"><option value="BlocksDelivery" selected>Блокирует сдачу проекта</option><option value="Other">Другое</option></select></div>
+      </div>
+      <div class="field"><label for="note">Пояснение</label><textarea class="textarea" id="note" placeholder="Почему исправляем именно сейчас"></textarea><div class="hint" id="note-hint">Обязательно, если выбрано «Другое»</div></div>
+      <div class="row">
+        <div class="field"><label for="rel">Релиз <span class="req">*</span></label><select class="select" id="rel"><option selected>1.1 (до 15.10)</option></select></div>
+        <div class="field" id="dl-field"><label for="dl">Дедлайн <span class="req">*</span></label><div class="dwrap"><input class="input" id="dl" value="08.10.2026"><svg class="cal" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d1f25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><div class="hint" id="dl-msg">08.10.2026 · предложен для P1</div></div>
+      </div>
+      <div class="field u-mb-0"><label for="who">Ответственный</label><select class="select" id="who"><option value="" selected>— Не назначен</option><option value="semen">Семен (Разработчик)</option></select><div class="hint" id="who-hint">Можно оставить пустым. Тогда баг попадёт в фильтр «Свободные»</div></div>
+    </div>
+    <div class="modal-foot"><a class="btn secondary" href="../bugs/bug-b17-new.html">Отмена</a><a id="plan-save" class="btn " href="../bugs/bug-b17-planned.html">Сохранить</a></div>
+  </div>
+
+</body></html>

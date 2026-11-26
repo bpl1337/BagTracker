@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Передать B17 на проверку — БагТрек</title><link rel="stylesheet" href="../../css/main.css"></head>
+<body class="modal-page">
+  <iframe class="modal-bg" src="../bugs/bug-b17-rework.html" tabindex="-1" aria-hidden="true"></iframe>
+  <a class="overlay" href="../bugs/bug-b17-rework.html" aria-label="Закрыть"></a>
+  <div class="modal">
+    <div class="modal-head"><div><h2>Передать B17 на проверку</h2><div class="sub">Повторная передача после доработки</div></div><a class="close" href="../bugs/bug-b17-rework.html">×</a></div>
+    <div class="modal-body">
+      <div class="field"><label for="rel">Релиз исправления <span class="req">*</span></label><select class="select" id="rel"><option selected>1.1 (до 15.10)</option></select></div>
+      <div class="field u-mb-0" id="mr-field"><label for="mr1">Ссылки на коммиты / MR <span class="req">*</span></label>
+        <div class="mrrow"><input class="input" id="mr1" value="!67"><a class="x" href="#" aria-label="Удалить">×</a></div>
+        <div class="mrrow"><input class="input" id="mr2" placeholder="!67 или ссылка на коммит"><a class="x" href="#" aria-label="Удалить">×</a></div>
+        <div class="mrbar"><a href="#">+ добавить ссылку</a><span class="chips">Последние MR: <a href="#">!67</a><a href="#">!68</a></span></div></div>
+      <div class="field"><label for="cm">Комментарий к исправлению</label><textarea class="textarea" id="cm">Добавлена обработка пустого поля «Квартира», обновлён тест.</textarea></div>
+      <div class="banner green u-mb-0">Тестировщик получит уведомление после отправки.</div>
+    </div>
+    <div class="modal-foot"><a class="btn secondary" href="../bugs/bug-b17-rework.html">Отмена</a><a class="btn " id="submit-btn" href="../bugs/bug-b17-review.html">Отправить</a></div>
+  </div>
+
+</body></html>

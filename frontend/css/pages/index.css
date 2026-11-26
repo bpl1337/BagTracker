@@ -1,0 +1,55 @@
+.toc {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px 64px;
+}
+
+.toc h1 {
+  margin-bottom: 8px;
+}
+
+.toc > p {
+  color: var(--ink-2);
+  margin: 0 0 28px;
+}
+
+.toc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.toc .card h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc li {
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line-2);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.toc li:last-child {
+  border-bottom: 0;
+}
+
+.toc li a {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.toc li .sc {
+  color: var(--ink-2);
+  font-size: 12px;
+  white-space: nowrap;
+}

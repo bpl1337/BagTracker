@@ -1,0 +1,103 @@
+.form-card {
+  padding: 0;
+}
+
+.form-card .form-body {
+  padding: 28px;
+}
+
+.form-card .form-foot {
+  background: #f7f8fa;
+  border-top: 1px solid var(--line);
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  border-radius: 0 0 var(--r-card) var(--r-card);
+}
+
+.form-card .form-foot .left {
+  margin-right: auto;
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.divider {
+  height: 1px;
+  background: var(--line);
+  margin: 24px 0;
+}
+
+.step-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.step-row .num {
+  width: 28px;
+  height: 36px;
+  flex: none;
+  border: 1px solid #b9bdc6;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.step-row .input {
+  height: 36px;
+}
+
+.add-step {
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.dropzone {
+  border: 1.5px dashed #b9bdc6;
+  border-radius: var(--r-ctrl);
+  padding: 22px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dropzone .formats {
+  font-size: 12px;
+  color: var(--ink-2);
+  margin: 6px 0 12px;
+}
+
+.file-chips {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.file-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 32px;
+  padding: 0 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.file-chip .sz {
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.file-chip .x {
+  text-decoration: none;
+  color: var(--ink-2);
+}

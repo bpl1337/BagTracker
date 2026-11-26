@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Добавление участника — БагТрек</title>
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body class="modal-page">
+  <iframe class="modal-bg" src="members.html" tabindex="-1" aria-hidden="true"></iframe>
+  <a class="overlay" href="members.html" aria-label="Закрыть"></a>
+  <div class="modal">
+    <div class="modal-head"><h2>Добавление участника</h2><a class="close" href="members.html">×</a></div>
+    <div class="modal-body">
+      <div class="banner green u-mb-20 is-hidden" id="ma-banner"></div>
+      <div class="field error" id="ma-field"><label>Почта участника<span class="req">*</span></label><input class="input" type="email" id="ma-email" value="kurban@gmail.com"><div class="err" id="ma-err">Пользователь с такой почтой не найден.</div></div>
+      <div class="field u-mb-0"><label>Роль<span class="req">*</span></label>
+        <div class="options">
+          <div class="option" data-role="tester"><span class="radio"></span>Тестировщик</div>
+          <div class="option checked" data-role="developer"><span class="radio"></span>Разработчик</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-foot"><a class="btn" id="ma-btn" href="member-add-not-found.html">Добавить</a></div>
+  </div>
+
+</body>
+</html>

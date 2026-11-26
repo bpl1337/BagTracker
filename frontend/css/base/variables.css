@@ -1,0 +1,25 @@
+:root {
+  --bg: #f2f3f5;
+  --surface: #ffffff;
+  --ink: #1d1f25;
+  --ink-2: #555a66;
+  --muted: #8a8f9a;
+  --line: #dcdfe4;
+  --line-2: #eceef1;
+  --marker: #ffe45c;
+  --danger: #d92d20;
+  --danger-bg: #fff1f0;
+  --ok: #157f3c;
+  --ok-bg: #eef8f0;
+  --ok-line: #bfe3c8;
+  --warn-bg: #fff8dc;
+  --warn-line: #f2d675;
+  --warn-ink: #7a4a00;
+
+  --r-ctrl: 10px;
+  --r-card: 16px;
+  --r-modal: 20px;
+
+  --font: "Golos Text", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-head: "Unbounded", "Golos Text", Arial, sans-serif;
+}
