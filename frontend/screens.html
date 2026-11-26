@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Прототип — БагТрек</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="screens.html">БагТрек</a>
+    <span class="sep">/</span>
+    <span class="project">Вёрстка экранов · этап 1</span>
+    <span class="spacer"></span>
+    <a class="btn secondary" href="pages/auth/login.html">Начать со входа</a>
+  </header>
+
+  <main class="toc">
+    <h1>Экраны прототипа</h1>
+    <p>Каждая страница соответствует фрейму в Figma. Справа указан сценарий из документа «ВИ» (номер в скобках — альтернативный поток). Сквозной путь: Вход → Список багов → Новый баг → B17 → Запланировать → Взять в работу → На проверку → Результат проверки → Закрыт.</p>
+
+    <div class="toc-grid">
+      <section class="card card-pad">
+        <h2>Вход и проект</h2>
+        <ul>
+          <li><a href="pages/auth/login.html">Вход</a><span class="sc">вход в систему</span></li>
+          <li><a href="pages/auth/register.html">Регистрация</a><span class="sc">вход в систему</span></li>
+          <li><a href="pages/projects/no-projects.html">Нет проектов</a><span class="sc">C1 · ВИ-01</span></li>
+          <li><a href="pages/projects/no-access.html">Нет доступа</a><span class="sc">предусловие C2–C9</span></li>
+          <li><a href="pages/projects/project-new.html">W7 · Новый проект</a><span class="sc">C1 · ВИ-01</span></li>
+          <li><a href="pages/projects/project-new-key-taken.html">W7 · Ошибка «Ключ уже занят»</a><span class="sc">C1 · ВИ-01 (4a)</span></li>
+        </ul>
+      </section>
+
+      <section class="card card-pad">
+        <h2>Релизы и участники</h2>
+        <ul>
+          <li><a href="pages/releases/releases.html">W8 · Релизы</a><span class="sc">C1 · ВИ-01, C3 · ВИ-09</span></li>
+          <li><a href="pages/releases/releases-added.html">W8 · Релизы (добавлен 1.2)</a><span class="sc">C3 · ВИ-09</span></li>
+          <li><a href="pages/members/members.html">W8 · Участники</a><span class="sc">C2 · ВИ-09</span></li>
+          <li><a href="pages/members/member-add.html">Добавление участника · исходное</a><span class="sc">C2 · ВИ-09</span></li>
+          <li><a href="pages/members/member-add-success.html">Добавление участника · успех</a><span class="sc">C2 · ВИ-09</span></li>
+          <li><a href="pages/members/member-add-not-found.html">Добавление участника · почта не найдена</a><span class="sc">C2 · ВИ-09 (4a)</span></li>
+          <li><a href="pages/members/member-add-exists.html">Добавление участника · уже участник</a><span class="sc">C2 · ВИ-09 (4b)</span></li>
+        </ul>
+      </section>
+
+      <section class="card card-pad">
+        <h2>Список и создание бага</h2>
+        <ul>
+          <li><a href="pages/bugs/bugs.html">W1 · Список багов</a><span class="sc">C4, C5, C7, C9</span></li>
+          <li><a href="pages/bugs/bug-new.html">W2 · Новый баг</a><span class="sc">C4 · ВИ-02</span></li>
+          <li><a href="pages/bugs/bug-new-error.html">W2 · Ошибка валидации</a><span class="sc">C4 · ВИ-02 (6a)</span></li>
+          <li><a href="pages/bugs/bug-b9.html">W3 · Карточка B9 (похожий)</a><span class="sc">C4 · ВИ-02 (3a)</span></li>
+        </ul>
+      </section>
+
+      <section class="card card-pad">
+        <h2>Карточка B17 по статусам</h2>
+        <ul>
+          <li><a href="pages/bugs/bug-b17-new-toast.html">W3 · B17 Новый + тост</a><span class="sc">C4 · ВИ-02</span></li>
+          <li><a href="pages/bugs/bug-b17-new.html">W3 · B17 Новый</a><span class="sc">C5, C6 · ВИ-03</span></li>
+          <li><a href="pages/bugs/bug-b17-planned.html">W3 · B17 Запланирован</a><span class="sc">C5 · ВИ-03, C7 · ВИ-04</span></li>
+          <li><a href="pages/bugs/bug-b17-progress.html">W3 · B17 В работе</a><span class="sc">C7 · ВИ-04, C8 · ВИ-05</span></li>
+          <li><a href="pages/bugs/bug-b17-review.html">W3 · B17 На проверке</a><span class="sc">C8 · ВИ-05, C9 · ВИ-06</span></li>
+          <li><a href="pages/bugs/bug-b17-rework.html">W3 · B17 На доработке</a><span class="sc">C9 · ВИ-06 (4a)</span></li>
+          <li><a href="pages/bugs/bug-b17-closed.html">W3 · B17 Закрыт</a><span class="sc">C9 · ВИ-06</span></li>
+          <li><a href="pages/bugs/bug-b17-rejected.html">W3 · B17 Отклонён</a><span class="sc">C6 · ВИ-03</span></li>
+        </ul>
+      </section>
+
+      <section class="card card-pad">
+        <h2>Действия над багом (модальные окна)</h2>
+        <ul>
+          <li><a href="pages/bug-actions/plan.html">W4 · Запланировать исправление</a><span class="sc">C5 · ВИ-03</span></li>
+          <li><a href="pages/bug-actions/plan-error.html">W4 · Ошибка «Дедлайн в прошлом»</a><span class="sc">C5 · ВИ-03 (4a)</span></li>
+          <li><a href="pages/bug-actions/reject.html">W4a · Отклонить баг</a><span class="sc">C6 · ВИ-03</span></li>
+          <li><a href="pages/bug-actions/submit.html">W5 · Передать на проверку (из «В работе»)</a><span class="sc">C8 · ВИ-05</span></li>
+          <li><a href="pages/bug-actions/submit-rework.html">W5 · Передать на проверку (из «На доработке»)</a><span class="sc">C8 · ВИ-05 (1a)</span></li>
+          <li><a href="pages/bug-actions/verify-fixed.html">W6 · Результат: Исправлено</a><span class="sc">C9 · ВИ-06</span></li>
+          <li><a href="pages/bug-actions/verify-notfixed.html">W6 · Результат: Не исправлено</a><span class="sc">C9 · ВИ-06 (4a)</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+</body>
+</html>

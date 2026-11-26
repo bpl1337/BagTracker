@@ -1,0 +1,84 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-2);
+  padding: 13px 20px;
+  background: #f7f8fa;
+  border-bottom: 1px solid var(--line);
+}
+
+.table th:first-child {
+  border-top-left-radius: var(--r-card);
+}
+
+.table th:last-child {
+  border-top-right-radius: var(--r-card);
+}
+
+.table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+.table tr.clickable td {
+  cursor: pointer;
+}
+
+.table tr.clickable:hover td {
+  background: #fafbfc;
+}
+
+.table td a.rowlink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.table tr.overdue td {
+  background: #fff1f0;
+}
+
+.table tr.overdue .code, .table .overdue-text {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.table .code {
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.table .more {
+  color: var(--ink-2);
+  text-align: right;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.person .nm {
+  font-size: 14px;
+}
+
+.person .em {
+  font-size: 12px;
+  color: var(--ink-2);
+}

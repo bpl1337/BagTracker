@@ -1,0 +1,103 @@
+.topbar {
+  height: 64px;
+  background: var(--ink);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  gap: 16px;
+}
+
+.topbar .logo {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 19px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+
+.topbar .sep {
+  color: #6b7080;
+  font-size: 20px;
+}
+
+.topbar .project {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.topbar .project .dot {
+  color: #8a8f9a;
+  margin: 0 6px;
+}
+
+.topbar .project .k {
+  color: #b8bcc6;
+}
+
+.keybox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 26px;
+  padding: 0 5px;
+  border: 1.5px solid currentColor;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.topbar .spacer {
+  flex: 1;
+}
+
+.bell {
+  position: relative;
+  display: inline-flex;
+  color: #c9ccd3;
+  text-decoration: none;
+}
+
+.bell .count {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  background: var(--danger);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.user .name {
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.user .role {
+  font-size: 12px;
+  color: #b8bcc6;
+}
+
+.user .chev {
+  color: #c9ccd3;
+  margin-left: 6px;
+}

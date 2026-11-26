@@ -1,0 +1,147 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.st-new {
+  background: #e1e9ff;
+  color: #1f4fd6;
+}
+
+.st-planned {
+  background: #d6f2f7;
+  color: #0d6e83;
+}
+
+.st-progress {
+  background: #ece5ff;
+  color: #6a2fd1;
+}
+
+.st-review {
+  background: #fff1c4;
+  color: #8a4b00;
+}
+
+.st-rework {
+  background: #ffe3cc;
+  color: #c2410c;
+}
+
+.st-closed {
+  background: #dcf3e2;
+  color: #157f3c;
+}
+
+.st-rejected {
+  background: #e8eaee;
+  color: #4b5160;
+}
+
+.st-released {
+  background: #dcf3e2;
+  color: #157f3c;
+}
+
+.st-planning {
+  background: #d6f2f7;
+  color: #0d6e83;
+}
+
+.prio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 0 7px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.p1 {
+  background: var(--danger);
+  color: #fff;
+}
+
+.p2 {
+  background: #ffe3cc;
+  color: #c2410c;
+}
+
+.p3 {
+  background: #e8eaee;
+  color: #4b5160;
+}
+
+.sev {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 11px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sev-block {
+  background: var(--danger);
+  color: #fff;
+}
+
+.sev-major {
+  background: #ffe3cc;
+  color: #c2410c;
+}
+
+.sev-minor {
+  background: #eceef1;
+  color: #4b5160;
+  border-radius: 5px;
+}
+
+.tag-gray {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  background: #e8eaee;
+  color: #4b5160;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bug-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 14px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 9px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.similar {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 10px;
+  background: var(--marker);
+  color: var(--ink);
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}

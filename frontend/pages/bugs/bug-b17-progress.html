@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B17 В работе — БагТрек</title>
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="bugs.html">БагТрек</a>
+  <span class="sep">/</span>
+  <a class="project" href="bugs.html">Shop<span class="dot">·</span><span class="k">ключ</span><span class="keybox">B</span></a>
+  <span class="spacer"></span>
+  <a class="bell" href="#" title="Уведомления"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="count">3</span></a>
+  <a class="user" href="../auth/login.html" title="Выйти"><span class="avatar light">L</span><span><div class="name">Lid</div><div class="role">Тимлид</div></span><span class="chev">⌄</span></a>
+</header>
+<nav class="tabs">
+  <a href="bugs.html" class="active">Баги<span class="n">4</span></a>
+  <a href="../releases/releases.html">Релизы<span class="n">2</span></a>
+  <a href="../members/members.html">Участники<span class="n">3</span></a>
+</nav>
+
+<main class="page">
+  <div class="crumbs"><a href="bugs.html">Баги</a> / B17</div>
+  <div class="bug-title">
+    <span class="bug-code">B17</span>
+    <h1>Не работает кнопка «Подтвердить заказ»</h1>
+    <span class="badge st-progress">В работе</span>
+  </div>
+
+  <div class="card actions-bar">
+    <span class="lbl">Действия</span>
+    <div class="act"><a class="btn" href="../bug-actions/submit.html">На проверку</a><span class="who">разработчик</span></div>
+      <div class="act"><a class="btn secondary" href="#comments">Комментировать</a><span class="who">все</span></div>
+      <span class="note">Для передачи нужны релиз исправления и ссылка на MR</span>
+  </div>
+
+  <div class="bug-grid">
+    <div class="card card-pad">
+      <div class="section">
+        <h3>Описание</h3>
+        <p>На шаге оформления заказа кнопка «Подтвердить заказ» не реагирует на нажатие. Заказ не создаётся, ошибок в интерфейсе нет. В консоли — TypeError в обработчике формы.</p>
+      </div>
+      <div class="section">
+        <h3>Шаги воспроизведения</h3>
+        <ol class="steps">
+          <li>Добавить любой товар в корзину</li>
+          <li>Перейти к оформлению заказа</li>
+          <li>Заполнить адрес доставки</li>
+          <li>Нажать «Подтвердить заказ»</li>
+        </ol>
+      </div>
+      <div class="results">
+        <div class="result expected"><h4>Ожидаемый результат</h4><p>Заказ создан, открыта страница «Спасибо за заказ», на почту пришло письмо.</p></div>
+        <div class="result actual"><h4>Фактический результат</h4><p>Ничего не происходит, пользователь остаётся на шаге оформления.</p></div>
+      </div>
+      <div class="section">
+        <h3>Вложения <span class="muted u-fw-normal">(2)</span></h3>
+        <div class="files">
+          <div class="file-tile"><div class="thumb"><div class="fake"><i class="u-w-70"></i><i></i><i class="u-w-45"></i><i class="btnbar"></i></div></div><div class="meta">screenshot.png<div class="sz">412 КБ</div></div></div>
+          <div class="file-tile"><div class="thumb"><span class="red">TypeError: cannot read</span><br>at submitOrder<br>(cart.js:88)<br>at onClick<br>(Button.jsx:14)</div><div class="meta">console.log<div class="sz">8 КБ</div></div></div>
+        </div>
+      </div>
+      <div class="section u-mb-0">
+        <h3>Ссылки на коммиты / MR</h3>
+        <div class="empty-dash">Ссылок пока нет. Разработчик добавит их при передаче на проверку.</div>
+      </div>
+    </div>
+
+    <aside class="card props">
+      <div class="prop"><span class="k">Приоритет</span><span class="v"><span class="prio p1">P1</span></span></div>
+      <div class="prop"><span class="k">Серьёзность</span><span class="v"><span class="sev sev-block">Блокирующая</span></span></div>
+      <div class="prop"><span class="k">Основание</span><span class="v">Блокирует сдачу проекта</span></div>
+      <div class="prop"><span class="k">Релиз (план)</span><span class="v">1.1 (до 15.10)</span></div>
+      <div class="prop"><span class="k">Дедлайн</span><span class="v">08.10.2026</span></div>
+      <div class="prop"><span class="k">Ответственный</span><span class="v"><span class="avatar sm">С</span> Семен (Разработчик)</span></div>
+      <div class="prop"><span class="k">Релиз исправления</span><span class="v"><span class="dash">—</span></span></div>
+      <div class="prop"><span class="k">Найден в релизе</span><span class="v">1.0</span></div>
+      <div class="prop"><span class="k">Автор</span><span class="v"><span class="avatar sm dark">K</span> Курбан (Тестировщик)</span></div>
+    </aside>
+  </div>
+
+  <div class="card u-mt-24">
+    <div class="subtabs">
+      <a href="#comments" class="active">Комментарии<span class="n">1</span></a>
+      <a href="#history">История изменений<span class="n">5</span></a>
+    </div>
+    <div class="comments" id="comments">
+      <div class="comment">
+        <span class="avatar">С</span>
+        <div class="body"><div class="hd"><b>Семен</b>Разработчик, 06.10, 11:02</div>Похоже, обработчик падает, если поле «Квартира» пустое: в логе TypeError в submitOrder. Возьму после B15.</div>
+      </div>
+      <div class="comment-form">
+        <span class="avatar dark">L</span>
+        <div class="wrap">
+          <textarea class="textarea" rows="3" placeholder="Написать комментарий…"></textarea>
+          <a class="btn disabled" href="#comments">Отправить</a>
+        </div>
+      </div>
+    </div>
+    <div class="history" id="history">
+      <div class="h-item"><span class="when">06.10, 10:12</span><span>Курбан создал баг, статус «Новый»</span></div>
+      <div class="h-item"><span class="when">06.10, 10:12</span><span>Установлены приоритет P1 и серьёзность «Блокирующая»</span></div>
+      <div class="h-item"><span class="when">06.10, 10:12</span><span>Приложены файлы: screenshot.png, console.log</span></div>
+      <div class="h-item"><span class="when">06.10, 12:30</span><span>Lid запланировал исправление: релиз 1.1, дедлайн 08.10.2026, статус «Запланирован»</span></div>
+      <div class="h-item"><span class="when">06.10, 14:15</span><span>Семен взял баг в работу, статус «В работе»</span></div>
+    </div>
+  </div>
+</main>
+
+  <script defer src="../../js/pages/bug-card.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.keyrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.keyin {
+  width: 44px;
+  height: 40px;
+  border: 1px solid #b9bdc6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  background: #fff;
+}
+
+.keyin.error {
+  border-color: var(--danger);
+}
+
+input.keyin {
+  width: 72px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  color: var(--ink);
+  outline: none;
+}
+
+input.keyin:focus {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 3px rgba(29,31,37,.08);
+}
+
+input.keyin.error:focus {
+  border-color: var(--danger);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Баги — БагТрек</title>
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="bugs.html">БагТрек</a>
+  <span class="sep">/</span>
+  <a class="project" href="bugs.html">Shop<span class="dot">·</span><span class="k">ключ</span><span class="keybox">B</span></a>
+  <span class="spacer"></span>
+  <a class="bell" href="#" title="Уведомления"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="count">3</span></a>
+  <a class="user" href="../auth/login.html" title="Выйти"><span class="avatar light">L</span><span><div class="name">Lid</div><div class="role">Тимлид</div></span><span class="chev">⌄</span></a>
+</header>
+<nav class="tabs">
+  <a href="bugs.html" class="active">Баги<span class="n">4</span></a>
+  <a href="../releases/releases.html">Релизы<span class="n">2</span></a>
+  <a href="../members/members.html">Участники<span class="n">3</span></a>
+</nav>
+<main class="page">
+  <div class="page-head">
+    <div>
+      <h1>Баги</h1>
+      <p id="bug-summary">4 бага, из них 1 просрочен</p>
+    </div>
+    <div class="actions"><a class="btn" href="bug-new.html">+ Новый баг</a></div>
+  </div>
+
+  <div class="toolbar">
+    <div class="chips">
+      <a class="chip active" href="#" data-filter="All">Все</a>
+      <a class="chip" href="#" data-filter="Mine">Мои</a>
+      <a class="chip" href="#" data-filter="Free">Свободные</a>
+      <a class="chip" href="#" data-filter="NeedsTriage">Требуют разбора</a>
+      <a class="chip" href="#" data-filter="AwaitingReview">Ждут проверки</a>
+      <a class="chip" href="#" data-filter="Overdue">Просроченные <span class="cnt" id="overdue-count">1</span></a>
+    </div>
+    <input class="input search" id="bug-search" type="search" placeholder="Поиск по номеру или заголовку">
+  </div>
+
+  <div class="card">
+    <table class="table">
+      <thead>
+        <tr><th>№</th><th>Заголовок</th><th>Приоритет ↓</th><th>Статус</th><th>Ответственный</th><th>Дедлайн ↓</th></tr>
+      </thead>
+      <tbody id="bug-rows">
+        <tr class="clickable" data-filters="All Free">
+          <td class="code"><a class="rowlink" href="bug-b17-planned.html">B17</a></td>
+          <td><a class="rowlink" href="bug-b17-planned.html">Не работает кнопка «Подтвердить заказ»</a></td>
+          <td><span class="prio p1">P1</span></td>
+          <td><span class="badge st-planned">Запланирован</span></td>
+          <td>—</td>
+          <td>08.10</td>
+        </tr>
+        <tr data-filters="All">
+          <td class="code">B15</td>
+          <td>Неверная сумма заказа со скидкой</td>
+          <td><span class="prio p2">P2</span></td>
+          <td><span class="badge st-progress">В работе</span></td>
+          <td>Семен</td>
+          <td>10.10</td>
+        </tr>
+        <tr class="overdue" data-filters="All Overdue">
+          <td class="code">B12</td>
+          <td>Не сохраняется адрес доставки</td>
+          <td><span class="prio p2">P2</span></td>
+          <td><span class="badge st-rework">На доработке</span></td>
+          <td>Семен</td>
+          <td class="overdue-text">05.10 · просрочен</td>
+        </tr>
+        <tr class="clickable" data-filters="All">
+          <td class="code"><a class="rowlink" href="bug-b9.html">B9</a></td>
+          <td><a class="rowlink" href="bug-b9.html">Кнопка оплаты не активна</a></td>
+          <td><span class="prio p3">P3</span></td>
+          <td><span class="badge st-closed">Закрыт</span></td>
+          <td>Семен</td>
+          <td>01.10</td>
+        </tr>
+        <tr class="is-hidden" id="no-bugs"><td colspan="6">Багов нет</td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+  <script defer src="../../js/pages/bug-list.js"></script>
+</body>
+</html>
